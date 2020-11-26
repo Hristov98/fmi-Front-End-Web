@@ -1,0 +1,293 @@
+html {
+    height: 100%;
+    width: 100%;
+}
+
+body {
+    font-size: 16px;
+    height: 100%;
+    margin: 0px;
+}
+
+* {
+    font-family: Helvetica, sans-serif;
+}
+
+.pageHeader {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height: 2.5rem;
+}
+
+h1 {
+    margin-left: 3rem;
+    font-weight: normal;
+}
+
+#searchField {
+    display: flex;
+    justify-content: space-between;
+    margin-right: 3rem;
+    padding: 0.5rem;
+    font-size: 1rem;
+    border: none;
+    border-radius: 25px;
+    color: white;
+    background-color: #f6f7fd;
+}
+
+#searchBar {
+    background-color: #f6f7fd;
+    border: none;
+    border-radius: 15px;
+}
+
+#searchBar:focus {
+    outline: none;
+}
+
+#searchButton {
+    background-color: #f6f7fd;
+    border: none;
+    border-radius: 15px;
+}
+
+#searchButton img {
+    width: 1rem;
+    height: 1rem;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    height: 100%;
+    padding: 1rem;
+    background-image: linear-gradient(-100deg, #a2f2f1 0%, #b19afe 100%);
+}
+
+.profileField {
+    display: flex;
+    width: 18rem;
+    flex-direction: column;
+    align-items: center;
+    max-width: 18rem;
+    margin: 0.25rem;
+    background-color: white;
+}
+
+.profileField img {
+    max-width: 4rem;
+    max-height: 4rem;
+    border-radius: 50%;
+}
+
+.profileName {
+    font-size: 1.2rem;
+}
+
+.profileStats {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    background-color: #f6f7fd;
+}
+
+.counters {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.counterTitle {
+    font-size: 0.75rem;
+    font-weight: bold;
+    color: #848694;
+    margin-top: 1rem;
+    margin-left: 1rem;
+    margin-bottom: 0.25rem;
+}
+
+.counterNumber {
+    font-weight: bold;
+    color: #49bad4;
+    margin-top: 0.25rem;
+    margin-left: 1rem;
+}
+
+#logOutButton {
+    height: 2rem;
+    margin: 0.5rem 1rem;
+    font-size: 1rem;
+    font-weight: bold;
+    color: #49bad4;
+    border: 1px solid #49bad4;
+    border-radius: 25px;
+    background-color: #f6f7fd;
+}
+
+#logOutButton:hover {
+    cursor: pointer;
+}
+
+#logOutButton:focus {
+    outline: none;
+}
+
+.contentField {
+    max-width: 55rem;
+    margin: 0.25rem;
+    background-color: white;
+}
+
+.messagePostField {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 3rem;
+    border: 1px solid #e1e7e8;
+    background-color: #f4fcfd;
+}
+
+#messagePostFieldAvatar {
+    width: 2rem;
+    height: 2rem;
+    border-radius: 50%;
+    margin: 1rem 1rem 1rem 2rem;
+}
+
+.inputMessage {
+    display: flex;
+    justify-content: space-around;
+    padding: 0px;
+    height: 75%;
+    width: 100%;
+    margin-right: 1rem;
+    border: 1px solid #e1e7e8;
+    border-radius: 25px;
+    background-color: white;
+}
+
+.inputMessage input {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding-left: 0.5rem;
+    font-size: 1rem;
+    border: none;
+    border-radius: 25px;
+}
+
+.inputMessage input:focus {
+    outline: none;
+}
+
+.inputMessage input::placeholder {
+    color: #81cfe1;
+}
+
+#messageButton {
+    border: none;
+    border-radius: 25px;
+    margin-right: 1rem;
+    background-color: white;
+}
+
+#messageButton img {
+    width: 1rem;
+    height: 1rem;
+}
+
+.postAvatar {
+    width: 2.5rem;
+    height: 2.5rem;
+    border-radius: 50%;
+    margin: 1rem 1rem 1rem 2rem;
+}
+
+ul {
+    padding: 0px;
+    margin: 0px;
+}
+
+li {
+    display: flex;
+    border: 1px solid #e1e7e8;
+}
+
+.post {
+    display: flex;
+    flex-direction: column;
+}
+
+.postInfo {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    height: 2rem;
+}
+
+.postTimeStamp {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.postName {
+    font-size: 1.25rem;
+    font-weight: bold;
+}
+
+.postTime {
+    font-weight: bold;
+    color: #aaaab4;
+}
+
+.closeButton {
+    border: none;
+    background-color: white;
+    font-weight: bold;
+    color: #898b97;
+    margin-right: 0.5rem;
+}
+
+.postContent {
+    width: 95%;
+    margin: 0.5rem 0rem;
+}
+
+.postLikes {
+    display: flex;
+    justify-content: flex-start;
+    margin: 1rem 0rem;
+}
+
+.likes,
+.dislikes {
+    display: flex;
+    justify-content: flex-start;
+    margin-right: 3rem;
+}
+
+.likeButton {
+    border: none;
+    background-color: white;
+    padding: 0rem;
+    margin-left: 0px;
+    margin-right: 0.25rem;
+}
+
+.likeButton img {
+    width: 1rem;
+    height: 1rem;
+}
+
+button:focus {
+    outline: none;
+}
+
+button:hover {
+    cursor: pointer;
+}

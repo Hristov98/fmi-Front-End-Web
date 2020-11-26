@@ -5,92 +5,115 @@
         <link rel="stylesheet" href="../css/profile.css" />
     </head>
     <body>
-        <header>
-            <p>Flutter</p>
-            <form id="searchField">
-				<input type="text" placeholder="Search" />
-				<button type="submit"><img src="search.jpg" alt="searchButton"></img></button>
-            </form>
-		</header>
-		<main>
-			<section id="profileField">
-				<section id="profileName">
-					<img src="profile.jpg" alt="profileImage">
-					<p>Martin Hristov</p>
-				</section>
-				<section id="profileStats">
-					<div id="postCounter">
-						<p>Posts</p>
-						<p>1</p>
-					</div>
-					<div id="reactionCounter">
-						<p>Reactions</p>
-						<p>7</p>
-					</div>
-					<input id="logOutButton" type="submit" value="Log out">
-				</section>
-			</section>
-			<aside>
-				<header>
-					<img src="profile.jpg" alt="profileImage">
-					<input type="text" placeholder="Say something">
-					<button type="submit"><img src="message.jpg" alt="messageButton"></img></button>
-				</header>
-				<ul>
-					<li>
-						<section>
-							<img src="profile.jpg" alt="profileImage">
-						</section>
-						<aside>
-							<div class="postInfo">
-								<span>Ivan Ivanov</span>
-								<span> 0 seconds ago</span>
-								<button type="submit" class="closeButton">X</button>
-							</div>
-							<div class="postContent">
-								<p>
-									Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-									labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco 
-									laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in 
-									voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat 
-									non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-								</p>
-							</div>
-							<div class="postLikes">
-								<button type="submit"><img src="likeButton.jpg" alt="likeButton"></img></button>
-								<p class="likeCounter">5</p>
-								<button type="submit"><img src="likeButton.jpg" alt="likeButton"></img></button>
-								<p  class="disikeCounter">3</p>
-							</div>
-						</aside>
-					</li>
-					<li>
-						<section>
-							<img src="profile.jpg" alt="profileImage">
-						</section>
-						<aside>
-							<div class="postInfo">
-								<span>Martin </span>
-								<span> a month ago</span>
-								<button type="submit" class="closeButton">X</button>
-							</div>
-							<div class="postContent">
-								<p>
-									At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum 
-									deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non 
-									provident. 
-								</p>
-							</div>
-							<div class="postLikes">
-								<button type="submit"><img src="likeButton.jpg" alt="likeButton"></img></button>
-								<p class="likeCounter">3</p>
-								<button type="submit"><img src="likeButton.jpg" alt="likeButton"></img></button>
-								<p  class="disikeCounter">0</p>
-							</div>
-						</aside>
-					</li>
-				</ul>
-			</aside>
-		</main>
+        <header class="pageHeader">
+            <h1 class="titleText">Flutter</h1>
+            <div id="searchField">
+                <input id="searchBar" type="text" placeholder="Search" />
+                <button id="searchButton" type="submit">
+                    <img src="../img/searchIcon.png" alt="searchButton" />
+                </button>
+            </div>
+        </header>
+        <main>
+            <section class="profileField">
+                <img src="../img/profileIcon.jpg" alt="profileImage" />
+                <p class="profileName">Martin Hristov</p>
+                <div class="profileStats">
+                    <div class="counters">
+                        <div id="postCounter">
+                            <p class="counterTitle">Posts</p>
+                            <p class="counterNumber">1</p>
+                        </div>
+                        <div class="reactionCounter">
+                            <p class="counterTitle">Reactions</p>
+                            <p class="counterNumber">7</p>
+                        </div>
+                    </div>
+                    <input id="logOutButton" type="submit" value="Log out" />
+                </div>
+            </section>
+            <aside class="contentField">
+                <header class="messagePostField">
+                    <img id="messagePostFieldAvatar" src="../img/profileIcon.jpg" alt="profileImage"/>
+                    <div class="inputMessage">
+                        <input type="text" placeholder="Say something" />
+                        <button id="messageButton" type="submit">
+                            <img src="../img/messageIcon.png" alt="messageButton" />
+                        </button>
+                    </div>
+                </header>
+                <ul>
+                    <li>
+                        <img class="postAvatar" src="../img/profileIcon.jpg" alt="profileImage" />
+                        <aside class="post">
+                            <div class="postInfo">
+                                <div class="postTimestamp">
+                                    <span class="postName">Ivan Ivanov</span>
+                                    <span class="postTime"> · 0 seconds ago</span>
+                                </div>
+                                <button class="closeButton" type="submit" class="closeButton">
+                                    X
+                                </button>
+                            </div>
+                            <p class="postContent">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+                                ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                                aliquip ex ea commodo consequat. Duis aute irure dolor in
+                                reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+                                pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+                                culpa qui officia deserunt mollit anim id est laborum.
+                            </p>
+                            <div class="postLikes">
+                                <span class="likes">
+                                    <button class="likeButton" type="submit">
+                                        <img src="../img/likeIcon.png" alt="likeButton" />
+                                    </button>
+                                    <span>5</span>
+                                </span>
+                                <span class="dislikes">
+                                    <button class="likeButton" type="submit">
+                                        <img src="../img/dislikeIcon.png" alt="likeButton" />
+                                    </button>
+                                    <span>3</span>
+                                </span>
+                            </div>
+                        </aside>
+                    </li>
+                    <li>
+                        <img class="postAvatar" src="../img/profileIcon.jpg" alt="profileImage" />
+                        <aside class="post">
+                            <div class="postInfo">
+                                <div class="postTimestamp">
+                                    <span class="postName">Martin </span>
+                                    <span class="postTime"> · Last month</span>
+                                </div>
+                                <button type="submit" class="closeButton">X</button>
+                            </div>
+                            <p class="postContent">
+                                At vero eos et accusamus et iusto odio dignissimos ducimus qui
+                                blanditiis praesentium voluptatum deleniti atque corrupti quos
+                                dolores et quas molestias excepturi sint occaecati cupiditate non
+                                provident.
+                            </p>
+                            <div class="postLikes">
+                                <span class="likes">
+                                    <button class="likeButton" type="submit">
+                                        <img src="../img/likeIcon.png" alt="likeButton" />
+                                    </button>
+                                    <span>3</span>
+                                </span>
+                                <span class="dislikes">
+                                    <button class="likeButton" type="submit">
+                                        <img src="../img/dislikeIcon.png" alt="likeButton" />
+                                    </button>
+                                    <span>0</span>
+                                </span>
+                            </div>
+                        </aside>
+                    </li>
+                </ul>
+            </aside>
+        </main>
     </body>
 </html>
