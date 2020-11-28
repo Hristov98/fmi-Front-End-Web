@@ -6,7 +6,7 @@ html {
 body {
     font-size: 16px;
     height: 100%;
-    margin: 0px;
+    margin: 0rem;
 }
 
 * {
@@ -18,7 +18,7 @@ body {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    height: 2.5rem;
+    height: 3rem;
 }
 
 h1 {
@@ -64,7 +64,7 @@ main {
     justify-content: center;
     align-items: flex-start;
     height: 100%;
-    padding: 1rem;
+    padding: 0.5rem;
     background-image: linear-gradient(-100deg, #a2f2f1 0%, #b19afe 100%);
 }
 
@@ -79,13 +79,16 @@ main {
 }
 
 .profileField img {
-    max-width: 4rem;
-    max-height: 4rem;
+    max-width: 5.25rem;
+    max-height: 5.25rem;
     border-radius: 50%;
+    padding: 0.5rem;
 }
 
 .profileName {
     font-size: 1.2rem;
+    margin-top: 0rem;
+    margin-bottom: 1rem;
 }
 
 .profileStats {
@@ -94,6 +97,7 @@ main {
     justify-content: space-between;
     align-items: center;
     width: 100%;
+    height: 3.75rem;
     background-color: #f6f7fd;
 }
 
@@ -112,10 +116,12 @@ main {
 }
 
 .counterNumber {
+    font-size: 1.125rem;
     font-weight: bold;
     color: #49bad4;
     margin-top: 0.25rem;
     margin-left: 1rem;
+    margin-bottom: 0.75rem;
 }
 
 #logOutButton {
@@ -162,7 +168,7 @@ main {
 .inputMessage {
     display: flex;
     justify-content: space-around;
-    padding: 0px;
+    padding: 0rem;
     height: 75%;
     width: 100%;
     margin-right: 1rem;
@@ -209,18 +215,21 @@ main {
 }
 
 ul {
-    padding: 0px;
-    margin: 0px;
+    padding: 0rem;
+    margin: 0rem;
 }
 
 li {
     display: flex;
     border: 1px solid #e1e7e8;
+    padding: 1rem;
 }
 
 .post {
     display: flex;
     flex-direction: column;
+    min-height: 7rem;
+    font-size: 0.875rem;
 }
 
 .postInfo {
@@ -245,29 +254,14 @@ li {
     color: #aaaab4;
 }
 
-.closeButton {
-    border: none;
-    background-color: white;
-    font-weight: bold;
-    color: #898b97;
-    margin-right: 0.5rem;
-}
-
-.closeButton img {
-    width: 0.75rem;
-    height: 0.75rem;
-    border: none;
-}
-
 .postContent {
-    width: 95%;
     margin: 0.5rem 0rem;
 }
 
 .postLikes {
     display: flex;
     justify-content: flex-start;
-    margin: 1rem 0rem;
+    margin-top: 1rem;
 }
 
 .likes,
@@ -281,7 +275,7 @@ li {
     border: none;
     background-color: white;
     padding: 0rem;
-    margin-left: 0px;
+    margin-left: 0rem;
     margin-right: 0.25rem;
 }
 
@@ -290,10 +284,54 @@ li {
     height: 1rem;
 }
 
+.closeButton {
+    border: none;
+    align-self: flex-start;
+    background-color: white;
+    font-weight: bold;
+    color: #898b97;
+    margin-top: 0.9rem;
+}
+
+.closeButton img {
+    width: 0.75rem;
+    height: 0.75rem;
+    border: none;
+}
+
 button:focus {
     outline: none;
 }
 
 button:hover {
     cursor: pointer;
+}
+
+@media only screen and (max-width: 890px) {
+    .pageHeader {
+        justify-content: center;
+    }
+
+    #searchField {
+        width: 70%;
+        margin: none;
+    }
+
+    main {
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+    }
+
+    .profileField {
+        max-width: none;
+        width: 90%;
+        margin: 0rem;
+    }
+
+    .contentField {
+        max-width: none;
+        width: 90%;
+        margin: 0rem;
+    }
 }
