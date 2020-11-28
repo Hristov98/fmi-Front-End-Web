@@ -253,6 +253,12 @@ li {
     margin-right: 0.5rem;
 }
 
+.closeButton img {
+    width: 0.75rem;
+    height: 0.75rem;
+    border: none;
+}
+
 .postContent {
     width: 95%;
     margin: 0.5rem 0rem;
